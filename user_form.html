@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Enter Details</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body  background="/minimalistic trees simple background white background 2560x1600 wallpaper_www.paperhi.com_16.jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		 <div class="container">
+		 	<div class="jumbotron">
+          <h1>Please Enter Your details</h1>
+         </div>
+		
+		     <form action="/users.php" name="users" method="post" autocomplete="on">
+					<div class="form-group">
+						<label class="control-label">Name</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" name="name" placeholder="Name" class="form-control" maxlength="15" pattern=".{4,}" title="Four or more characters" required>
+					</div>
+					<div class="form-group">
+						<label class="control-label">E-mail</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+						<input type="text" name="email" placeholder="Email" class="form-control" maxlength="25" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+					</div>
+					<div class="form-group">
+						<label class="control-label">Gender</label>
+						<input type="radio" name="gender" value="Male" checked>Male
+						<input type="radio" name="gender" value="Female">Female
+					</div>
+					<div class="form-group">
+						<label class="control-label">Happy to receive further communications (emails)</label>
+						<input type="radio" name="comm" value="Yes" checked>Yes
+						<input type="radio" name="comm" value="No">No
+					</div>
+					<div class="form-group">
+						<label class="control-label">Password</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" name="password" placeholder="Password" class="form-control" id="pwd" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="At least one number, At least one Captial letter and Eight or more characters" required>	
+					</div>	
+					<input type="submit" class="btn btn-info"  value="Save Details">
+				</form>
+			</div>
+		</div>
+	</div>	
+
+</body>
+</html>
