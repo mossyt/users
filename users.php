@@ -14,7 +14,7 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
+echo "Details Saved Succesfully";
 mysql_close($con)
 
 ?>
